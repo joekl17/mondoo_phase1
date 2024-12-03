@@ -26,5 +26,5 @@ jobs:
           curl -X POST \
             -H "Accept: application/vnd.github+json" \
             -H "Authorization: Bearer ${{ secrets.TOKEN }}" \
-            https://api.github.com/repos/joekl17/mondoo-phase2/dispatches \
+            https://api.github.com/repos/joekl17/mondoo_phase2/dispatches \
             -d '{"event_type":"trigger","client_payload":{"release_tag":"'"$TAG"'"}}'
